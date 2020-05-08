@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="simple quiz game built with HTML, CSS and JavaScript">
+	<meta name="viewport" content="width=device-width initial-scale= 1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Quiz</title>
+</head>
+<body>
+	<div class="game-container"> 
+		<div class="number">
+			<h3>Question <span class="question-num"></span> of <span class="total-question"></span></h3>
+		</div>
+		<div class="question">
+		
+		</div>
+		<div class="answers">
+			<div id="0" class="option1" onclick="check(this)"></div>
+			<div id="1" class="option2" onclick="check(this)"></div>
+			<div id="2" class="option3" onclick="check(this)"></div>
+			<div id="3" class="option4" onclick="check(this)"></div>
+		</div>
+		<div>
+			<button type="button" class="butt" onclick="next()">Next Question</button>
+		</div>
+		<div class="counter">
+			
+		</div>
+	</div>
+
+	<div class="quizover">
+		<div class="box">
+			<h1>
+			Good Try! <br />
+			You got <span class="correct-answers"></span> out of <span class="total"></span> questions correct!<br />
+			That is <span class="percentage"></span> 
+			</h1>
+			<button type="button" onclick="tryAgain()">Try Again</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
